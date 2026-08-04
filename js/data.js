@@ -49,7 +49,7 @@ const FASES = [
     descricao:
       "Topologia de rede corporativa: VLANs, roteamento inter-redes, segmentação por departamento e regras de firewall perimetral.",
     stack: ["VLAN", "Firewall", "Roteamento", "Subnetting"],
-    link: "https://github.com/JIsrael456/homelab-infra/tree/main/fase-01-rede",
+    link: "#",
   },
   {
     ordem: 2,
