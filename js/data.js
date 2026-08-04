@@ -56,7 +56,7 @@ const FASES = [
     codigo: "AD",
     nome: "Windows Server (AD / DNS / DHCP / GPO)",
     categoria: "Identidade",
-    status: "planejado",
+    status: "andamento",
     descricao:
       "Domínio Active Directory com estrutura de OUs por departamento, políticas de grupo, DNS interno e escopos DHCP segmentados.",
     stack: ["Active Directory", "DNS", "DHCP", "GPO"],
