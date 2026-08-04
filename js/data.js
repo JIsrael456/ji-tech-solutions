@@ -56,7 +56,7 @@ const FASES = [
     codigo: "AD",
     nome: "Windows Server (AD / DNS / DHCP / GPO)",
     categoria: "Identidade",
-    status: "andamento",
+    status: "planejado",
     descricao:
       "Domínio Active Directory com estrutura de OUs por departamento, políticas de grupo, DNS interno e escopos DHCP segmentados.",
     stack: ["Active Directory", "DNS", "DHCP", "GPO"],
@@ -71,7 +71,7 @@ const FASES = [
     descricao:
       "Provisionamento e hardening de estações de trabalho, ingresso no domínio e aplicação de políticas de segurança de endpoint.",
     stack: ["Windows 11", "Hardening", "Ingresso em domínio"],
-    link: "#",
+    link: "https://github.com/JIsrael456/homelab-infra/tree/main/fase-03-windows-client",
   },
   {
     ordem: 4,
@@ -82,7 +82,7 @@ const FASES = [
     descricao:
       "Servidores Linux para serviços internos: administração via shell, gerenciamento de pacotes, usuários e permissões.",
     stack: ["Ubuntu Server", "SSH", "systemd"],
-    link: "#",
+    link: "https://github.com/JIsrael456/homelab-infra/tree/main/fase-04-linux",
   },
   {
     ordem: 5,
@@ -93,7 +93,7 @@ const FASES = [
     descricao:
       "Conteinerização de serviços internos e orquestração básica com Docker Compose para simular cargas de trabalho isoladas.",
     stack: ["Docker", "Docker Compose"],
-    link: "#",
+    link: "https://github.com/JIsrael456/homelab-infra/tree/main/fase-05-docker",
   },
   {
     ordem: 6,
@@ -104,7 +104,7 @@ const FASES = [
     descricao:
       "Modelagem de banco relacional, consultas analíticas e rotinas de auditoria de dados — base para os dashboards de Power BI.",
     stack: ["SQL Server", "T-SQL", "Modelagem de dados"],
-    link: "#",
+    link: "https://github.com/JIsrael456/homelab-infra/tree/main/fase-06-banco-de-dados",
   },
   {
     ordem: 7,
@@ -115,7 +115,7 @@ const FASES = [
     descricao:
       "Scripts de automação para criação de usuários, relatórios de AD e tarefas administrativas recorrentes.",
     stack: ["PowerShell", "AD Module"],
-    link: "#",
+    link: "https://github.com/JIsrael456/homelab-infra/tree/main/fase-07-powershell",
   },
   {
     ordem: 8,
@@ -126,7 +126,7 @@ const FASES = [
     descricao:
       "Scripts Bash para monitoramento básico, backups e rotinas de manutenção dos servidores Linux do ambiente.",
     stack: ["Bash", "Cron"],
-    link: "#",
+    link: "https://github.com/JIsrael456/homelab-infra/tree/main/fase-08-shell",
   },
   {
     ordem: 9,
@@ -137,7 +137,7 @@ const FASES = [
     descricao:
       "Extensão do ambiente on-premises para a nuvem: máquinas virtuais, redes VPC e um data warehouse em BigQuery.",
     stack: ["Compute Engine", "VPC", "BigQuery"],
-    link: "#",
+    link: "https://github.com/JIsrael456/homelab-infra/tree/main/fase-09-google-cloud",
   },
   {
     ordem: 10,
@@ -148,7 +148,7 @@ const FASES = [
     descricao:
       "Painéis analíticos consumindo os dados gerados pelo ambiente: segurança, capacidade e indicadores operacionais.",
     stack: ["Power BI", "DAX"],
-    link: "#",
+    link: "https://github.com/JIsrael456/homelab-infra/tree/main/fase-10-powerbi",
   },
   {
     ordem: 11,
@@ -159,6 +159,6 @@ const FASES = [
     descricao:
       "Stack de observabilidade com Grafana e Prometheus para acompanhar a saúde de toda a infraestrutura simulada em tempo real.",
     stack: ["Grafana", "Prometheus"],
-    link: "#",
+    link: "https://github.com/JIsrael456/homelab-infra/tree/main/fase-11-monitoramento",
   },
 ];
