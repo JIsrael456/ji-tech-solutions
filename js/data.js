@@ -49,7 +49,7 @@ const FASES = [
     descricao:
       "Topologia de rede corporativa: VLANs, roteamento inter-redes, segmentação por departamento e regras de firewall perimetral.",
     stack: ["VLAN", "Firewall", "Roteamento", "Subnetting"],
-    link: "#",
+    link: "https://github.com/JIsrael456/homelab-infra/tree/main/fase-01-rede",
   },
   {
     ordem: 2,
@@ -60,7 +60,7 @@ const FASES = [
     descricao:
       "Domínio Active Directory com estrutura de OUs por departamento, políticas de grupo, DNS interno e escopos DHCP segmentados.",
     stack: ["Active Directory", "DNS", "DHCP", "GPO"],
-    link: "#",
+    link: "https://github.com/JIsrael456/homelab-infra/tree/main/fase-02-windows-server",
   },
   {
     ordem: 3,
