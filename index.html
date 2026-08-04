@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JI Tech Solutions — Ambiente de Infraestrutura Corporativa</title>
+<meta name="description" content="JI Tech Solutions — ambiente corporativo simulado para portfólio técnico: rede, servidores, identidade, automação, cloud e dados." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230D1521%22/><text x=%2250%22 y=%2266%22 font-size=%2252%22 text-anchor=%22middle%22 fill=%22%233ED6C6%22 font-family=%22monospace%22>JI</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="topo">
+  <div class="header-inner">
+    <a class="brand" href="#topo">
+      <span class="brand-mark">JI</span>
+      <span class="brand-name">Tech <strong>Solutions</strong></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#painel">Infraestrutura</a>
+      <a href="#stack">Stack</a>
+      <a href="#empresa">A empresa</a>
+      <a href="#autor">Sobre o projeto</a>
+    </nav>
+
+    <a class="cta-repo" href="#" id="linkRepoHeader" target="_blank" rel="noopener">
+      Ver repositório
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Ambiente corporativo simulado &middot; Projeto de portfólio</p>
+        <h1 id="heroNomeEmpresa">JI Tech Solutions</h1>
+        <p class="hero-tagline" id="heroTagline">Infraestrutura de TI simulada para uma operação de 50 colaboradores</p>
+        <p class="hero-desc" id="heroDescricao"></p>
+        <div class="hero-actions">
+          <a href="#painel" class="btn btn-primary">Ver painel de infraestrutura</a>
+          <a href="#" class="btn btn-ghost" id="linkRepoHero" target="_blank" rel="noopener">Repositório no GitHub</a>
+        </div>
+      </div>
+
+      <div class="hero-panel" aria-hidden="true">
+        <div class="hero-panel-head">
+          <span class="dot dot-live"></span>
+          <span>status geral do ambiente</span>
+        </div>
+        <div class="hero-panel-big" id="heroProgressoTexto">0%</div>
+        <div class="hero-progress-track">
+          <div class="hero-progress-fill" id="heroProgressoBar"></div>
+        </div>
+        <div class="hero-panel-foot">
+          <span id="heroStatusGeral">carregando…</span>
+          <span class="mono" id="heroTimestamp">--:--:--</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAINEL DE INFRAESTRUTURA (status board) ============ -->
+  <section class="painel" id="painel">
+    <div class="section-head">
+      <p class="eyebrow">Monitoramento de implantação</p>
+      <h2>Painel de infraestrutura</h2>
+      <p class="section-sub">Cada fase do ambiente é tratada como um sistema monitorado — do jeito que a equipe de observabilidade da empresa acompanharia em produção.</p>
+    </div>
+
+    <div class="status-summary" id="statusSummary">
+      <!-- preenchido via JS -->
+    </div>
+
+    <div class="fases-lista" id="fasesLista">
+      <!-- linhas de fase preenchidas via JS -->
+    </div>
+  </section>
+
+  <!-- ============ STACK TECNOLÓGICO ============ -->
+  <section class="stack-section" id="stack">
+    <div class="section-head">
+      <p class="eyebrow">Ferramentas em uso</p>
+      <h2>Stack tecnológico</h2>
+      <p class="section-sub">Reunidas conforme cada fase é implementada — sem tecnologia de vitrine, só o que de fato sustenta o ambiente.</p>
+    </div>
+    <div class="stack-grid" id="stackGrid">
+      <!-- preenchido via JS a partir das fases -->
+    </div>
+  </section>
+
+  <!-- ============ A EMPRESA ============ -->
+  <section class="empresa-section" id="empresa">
+    <div class="empresa-inner">
+      <div>
+        <p class="eyebrow">Contexto ficcional</p>
+        <h2>Uma empresa de papel, uma infraestrutura de verdade</h2>
+        <p>
+          A JI Tech Solutions não fatura, não tem CNPJ e não emprega ninguém — mas
+          toda decisão técnica documentada aqui foi tomada como se empregasse.
+          É um ambiente construído para reproduzir, camada por camada, os
+          problemas reais de uma operação de TI de médio porte: identidade,
+          segmentação de rede, automação de rotina, governança de dados e
+          observabilidade.
+        </p>
+        <p>
+          O objetivo não é simular uma empresa perfeita, e sim uma empresa
+          <em>plausível</em> — com as mesmas decisões de arquitetura, os mesmos
+          trade-offs e a mesma necessidade de documentação que uma equipe real
+          enfrentaria.
+        </p>
+      </div>
+      <dl class="empresa-facts">
+        <div><dt>Porte simulado</dt><dd id="factColaboradores">50 colaboradores</dd></div>
+        <div><dt>Fases planejadas</dt><dd id="factFases">11</dd></div>
+        <div><dt>Domínios cobertos</dt><dd>Rede · Identidade · Cloud · Dados</dd></div>
+        <div><dt>Documentação</dt><dd>GitHub + Notion</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE O AUTOR / PROJETO ============ -->
+  <section class="autor-section" id="autor">
+    <div class="autor-inner">
+      <div class="autor-card">
+        <p class="eyebrow">Quem construiu isso</p>
+        <h2 id="autorNome">—</h2>
+        <p class="autor-cargo" id="autorCargo">—</p>
+        <p id="autorBio"></p>
+        <div class="autor-links">
+          <a href="#" id="linkLinkedin" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" id="linkGithub" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© <span id="anoAtual"></span> JI Tech Solutions — projeto fictício com fins de portfólio técnico.</span>
+    <a href="#topo">Voltar ao topo ↑</a>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
